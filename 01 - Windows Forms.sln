@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_Scheduler", "Task_Sche
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Graphics", "03 - Graphics\03 - Graphics.csproj", "{B15CDA07-C251-4965-890D-3A64AE3B500C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - WPF", "05 - WPF\05 - WPF.csproj", "{095F5EB3-E87C-43D2-BC70-45FC58B813A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{B15CDA07-C251-4965-890D-3A64AE3B500C}.Release|x64.Build.0 = Release|Any CPU
 		{B15CDA07-C251-4965-890D-3A64AE3B500C}.Release|x86.ActiveCfg = Release|Any CPU
 		{B15CDA07-C251-4965-890D-3A64AE3B500C}.Release|x86.Build.0 = Release|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Debug|x64.Build.0 = Debug|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Debug|x86.Build.0 = Debug|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Release|x64.ActiveCfg = Release|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Release|x64.Build.0 = Release|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Release|x86.ActiveCfg = Release|Any CPU
+		{095F5EB3-E87C-43D2-BC70-45FC58B813A1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
