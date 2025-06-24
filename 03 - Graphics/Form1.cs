@@ -88,6 +88,7 @@ namespace _03___Graphics
             // Проверка на столкновение - игра закончена
             if ((x == pesx+60 && pesy >= 180 && pesy <= 250) || (x == pesx - 60 && pesy >= 180 && pesy <= 250))
             {
+                x += 10000;
                 MessageBox.Show("Игра закончена. Начинаем заново!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 x = this.ClientSize.Width;
                 pesy = 205;
