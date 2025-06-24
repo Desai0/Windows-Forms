@@ -21,18 +21,18 @@ namespace _03___Graphics
 
             try
             {
-                exampleImage = Image.FromFile("example.png");
+                exampleImage = Image.FromFile("../../../example.png");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка загрузки изображения 'example.png': {ex.Message}");
+                MessageBox.Show($"Ошибка загрузки изображения '..example.png': {ex.Message}");
                 // Можно установить какое-то изображение по умолчанию или просто пропустить
                 exampleImage = null;
             }
 
             try
             {
-                baklanImage = Image.FromFile("baklan.png");
+                baklanImage = Image.FromFile("../../../baklan.png");
             }
             catch (Exception ex)
             {
