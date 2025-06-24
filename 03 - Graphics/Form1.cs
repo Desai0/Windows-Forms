@@ -64,17 +64,16 @@ namespace _03___Graphics
         {
             x -= 5;
 
-            // Если изображение ушло за левый край
+            // Если изображение ушло за левый край  
             if (baklanImage != null && (x + IMAGE_WIDTH < 0))
             {
-                x = this.ClientSize.Width; // Возвращаем на правый край формы
+                x = this.ClientSize.Width; // Возвращаем на правый край формы  
             }
 
             if (isJumping == true && pesy > 5)
             {
                 pesy -= 10;
             }
-            
 
             if (isJumping == false && pesy < 205)
             {
@@ -83,16 +82,19 @@ namespace _03___Graphics
 
             if (isJumping == true && pesy == 5)
             {
-
                 isJumping = false;
             }
 
-            //if (x == pesx)
-            //{
-            //    break;
-            //}
+            // Проверка на столкновение - игра закончена
+            if ((x == pesx+50 && pesy >= 205 && pesy <= 250))
+            {
+                MessageBox.Show("Игра закончена. Начинаем заново!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                x = this.ClientSize.Width;
+                pesy = 205;
+                isJumping = false;
+            }
 
-            this.Invalidate(); // Перерисовываем форму (теперь с двойной буферизацией)
+            this.Invalidate();
         }
 
         private void button1_Click(object sender, EventArgs e)
