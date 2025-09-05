@@ -1,6 +1,9 @@
-﻿namespace Converter
+﻿
+using System.ComponentModel;
+
+namespace Converter
 {
-    partial class TemperatureConverterForm
+    partial class filePathLabel
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +31,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            textBox1 = new TextBox();
             button1 = new Button();
             label1 = new Label();
+            label2 = new Label();
+            openFileDialog1 = new OpenFileDialog();
+            button2 = new Button();
+            resultRichTextBox = new RichTextBox();
+            label3 = new Label();
             SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(46, 25);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 0;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(46, 79);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(46, 133);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(121, 23);
-            textBox1.TabIndex = 2;
             // 
             // button1
             // 
@@ -76,28 +58,90 @@
             label1.Size = new Size(0, 15);
             label1.TabIndex = 4;
             // 
-            // TemperatureConverterForm
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Yu Gothic UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label2.Location = new Point(46, 27);
+            label2.Name = "label2";
+            label2.Size = new Size(189, 32);
+            label2.TabIndex = 5;
+            label2.Text = "Простой выбор";
+            label2.Click += label2_Click;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileOk += openFileDialog1_FileOk;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(46, 84);
+            button2.Name = "button2";
+            button2.Size = new Size(99, 23);
+            button2.TabIndex = 6;
+            button2.Text = "Вставить файл";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // resultRichTextBox
+            // 
+            resultRichTextBox.Location = new Point(315, 27);
+            resultRichTextBox.Name = "resultRichTextBox";
+            resultRichTextBox.Size = new Size(421, 396);
+            resultRichTextBox.TabIndex = 7;
+            resultRichTextBox.Text = "";
+            resultRichTextBox.TextChanged += richTextBox1_TextChanged;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(50, 133);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 15);
+            label3.TabIndex = 8;
+            label3.Text = "label3";
+            // 
+            // filePathLabel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(761, 435);
+            Controls.Add(label3);
+            Controls.Add(resultRichTextBox);
+            Controls.Add(button2);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Name = "TemperatureConverterForm";
+            Name = "filePathLabel";
             Text = "TemperatureConverterForm";
+            Load += TemperatureConverterForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
-        #endregion
+        private void TemperatureConverterForm_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private TextBox textBox1;
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
         private Button button1;
         private Label label1;
+        private Label label2;
+        private OpenFileDialog openFileDialog1;
+        private Button button2;
+        private RichTextBox resultRichTextBox;
+        private Label label3;
     }
 }

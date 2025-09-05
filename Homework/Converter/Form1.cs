@@ -62,7 +62,7 @@ namespace Converter
 
         private void OpenTempConverter(object sender, EventArgs e)
         {
-            TemperatureConverterForm tempForm = new TemperatureConverterForm();
+            filePathLabel tempForm = new filePathLabel();
             tempForm.MdiParent = this;
             tempForm.Show();
         }
@@ -76,5 +76,10 @@ namespace Converter
         }
 
         #endregion
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
