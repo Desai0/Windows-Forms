@@ -23,9 +23,11 @@ namespace Converter
 
             ToolStripMenuItem createSubMenu = new ToolStripMenuItem("Создать");
             // Добавляем в него пункты для открытия конвертеров
-            createSubMenu.DropDownItems.Add("Конвертер длины", null, OpenLengthConverter);
-            createSubMenu.DropDownItems.Add("Конвертер веса", null, OpenWeightConverter);
-            createSubMenu.DropDownItems.Add("Конвертер температуры", null, OpenTempConverter);
+            createSubMenu.DropDownItems.Add("Пирамидальная сортировка", null, AkimchikLoh);
+            createSubMenu.DropDownItems.Add("Выбор из дерева", null, Bebra);
+            createSubMenu.DropDownItems.Add("Сортировка методом\nтурнира с выбыванием", null, OpenLengthConverter);
+            createSubMenu.DropDownItems.Add("Квадратичный выбор", null, OpenWeightConverter);
+            createSubMenu.DropDownItems.Add("Простой выбор", null, OpenTempConverter);
 
             fileMenu.DropDownItems.Add(createSubMenu);
             fileMenu.DropDownItems.Add("Закрыть все окна", null, CloseAllChildWindows);
@@ -45,6 +47,19 @@ namespace Converter
         }
 
         #region Методы для открытия дочерних окон
+        private void AkimchikLoh(object sender, EventArgs e)
+        {
+            AkimchikLoh lengthForm = new AkimchikLoh();
+            lengthForm.MdiParent = this;
+            lengthForm.Show();
+        }
+
+        private void Bebra(object sender, EventArgs e)
+        {
+            Bebra lengthForm = new Bebra();
+            lengthForm.MdiParent = this;
+            lengthForm.Show();
+        }
 
         private void OpenLengthConverter(object sender, EventArgs e)
         {
@@ -55,7 +70,7 @@ namespace Converter
 
         private void OpenWeightConverter(object sender, EventArgs e)
         {
-            WeightConverterForm weightForm = new WeightConverterForm();
+            filePathLabel1 weightForm = new filePathLabel1();
             weightForm.MdiParent = this;
             weightForm.Show();
         }

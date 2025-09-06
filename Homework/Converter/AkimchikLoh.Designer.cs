@@ -1,8 +1,6 @@
-﻿using System.ComponentModel;
-
-namespace Converter
+﻿namespace Converter
 {
-    partial class filePathLabel1
+    partial class AkimchikLoh
     {
         /// <summary>
         /// Required designer variable.
@@ -44,7 +42,7 @@ namespace Converter
             label3.Location = new Point(59, 133);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
-            label3.TabIndex = 14;
+            label3.TabIndex = 26;
             label3.Text = "label3";
             // 
             // resultRichTextBox
@@ -52,7 +50,7 @@ namespace Converter
             resultRichTextBox.Location = new Point(324, 27);
             resultRichTextBox.Name = "resultRichTextBox";
             resultRichTextBox.Size = new Size(421, 396);
-            resultRichTextBox.TabIndex = 13;
+            resultRichTextBox.TabIndex = 25;
             resultRichTextBox.Text = "";
             // 
             // button2
@@ -60,21 +58,19 @@ namespace Converter
             button2.Location = new Point(55, 84);
             button2.Name = "button2";
             button2.Size = new Size(99, 23);
-            button2.TabIndex = 12;
+            button2.TabIndex = 24;
             button2.Text = "Вставить файл";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click_1;
+            button2.Click += button2_Click;
             // 
             // label2
             // 
-            label2.AutoSize = true;
             label2.Font = new Font("Yu Gothic UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label2.Location = new Point(55, 27);
+            label2.Location = new Point(55, 16);
             label2.Name = "label2";
-            label2.Size = new Size(260, 32);
-            label2.TabIndex = 11;
-            label2.Text = "Квадратичный выбор";
-            label2.Click += label2_Click;
+            label2.Size = new Size(237, 66);
+            label2.TabIndex = 23;
+            label2.Text = "Пирамидальная сортировка";
             // 
             // label1
             // 
@@ -82,19 +78,19 @@ namespace Converter
             label1.Location = new Point(55, 239);
             label1.Name = "label1";
             label1.Size = new Size(0, 15);
-            label1.TabIndex = 10;
+            label1.TabIndex = 22;
             // 
             // button1
             // 
             button1.Location = new Point(55, 187);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
-            button1.TabIndex = 9;
+            button1.TabIndex = 21;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
+            button1.Click += button1_Click;
             // 
-            // filePathLabel1
+            // AkimchikLoh
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -105,9 +101,8 @@ namespace Converter
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
-            Name = "filePathLabel1";
-            Text = "WeightConverterForm";
-            Load += filePathLabel1_Load;
+            Name = "AkimchikLoh";
+            Text = "AkimchikLoh";
             ResumeLayout(false);
             PerformLayout();
         }

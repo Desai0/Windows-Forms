@@ -28,76 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            label3 = new Label();
+            resultRichTextBox = new RichTextBox();
+            button2 = new Button();
+            label2 = new Label();
             label1 = new Label();
-            textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            button1 = new Button();
             SuspendLayout();
             // 
-            // button1
+            // label3
             // 
-            button1.Location = new Point(36, 178);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            label3.AutoSize = true;
+            label3.Location = new Point(59, 133);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 15);
+            label3.TabIndex = 14;
+            label3.Text = "label3";
+            // 
+            // resultRichTextBox
+            // 
+            resultRichTextBox.Location = new Point(324, 27);
+            resultRichTextBox.Name = "resultRichTextBox";
+            resultRichTextBox.Size = new Size(421, 396);
+            resultRichTextBox.TabIndex = 13;
+            resultRichTextBox.Text = "";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(55, 89);
+            button2.Name = "button2";
+            button2.Size = new Size(99, 23);
+            button2.TabIndex = 12;
+            button2.Text = "Вставить файл";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // label2
+            // 
+            label2.Font = new Font("Yu Gothic UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label2.Location = new Point(33, 16);
+            label2.Name = "label2";
+            label2.Size = new Size(308, 80);
+            label2.TabIndex = 11;
+            label2.Text = "Сортировка методом турнира с выбыванием";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(36, 230);
+            label1.Location = new Point(55, 239);
             label1.Name = "label1";
             label1.Size = new Size(0, 15);
-            label1.TabIndex = 1;
+            label1.TabIndex = 10;
             // 
-            // textBox1
+            // button1
             // 
-            textBox1.Location = new Point(36, 127);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 2;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(36, 28);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 3;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(36, 75);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 4;
+            button1.Location = new Point(55, 187);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 9;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // LengthConverterForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox1);
+            Controls.Add(label3);
+            Controls.Add(resultRichTextBox);
+            Controls.Add(button2);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "LengthConverterForm";
             Text = "LengthConverterForm";
+            Load += LengthConverterForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Label label3;
+        private RichTextBox resultRichTextBox;
+        private Button button2;
+        private Label label2;
         private Label label1;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private Button button1;
     }
 }

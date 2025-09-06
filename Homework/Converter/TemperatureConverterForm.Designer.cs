@@ -1,5 +1,4 @@
-﻿
-using System.ComponentModel;
+﻿using System.ComponentModel;
 
 namespace Converter
 {
@@ -122,17 +121,14 @@ namespace Converter
 
         private void TemperatureConverterForm_Load(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            throw new NotImplementedException();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
         }
 
         #endregion
