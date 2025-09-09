@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Сортировка методом турнира с выбыванием
+
 namespace Converter
 {
     public partial class LengthConverterForm : Form

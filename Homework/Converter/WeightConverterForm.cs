@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Квадратичный выбор
+
 namespace Converter
 {
     public partial class filePathLabel1 : Form

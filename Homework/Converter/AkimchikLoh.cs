@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Пирамидальная сортировка
+
 namespace Converter
 {
     public partial class AkimchikLoh : Form
